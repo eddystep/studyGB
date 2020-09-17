@@ -22,37 +22,37 @@ func delenienatri (b: Int) {
 delenienatri(b: 13)
 
 //Задание №3
-var array = [Int]()
+var array3 = [Int]()
 var c = 0
 for _ in 1...100 {
     c += 1
-    array.append(c)
+    array3.append(c)
 }
 
-print(array)
+print(array3)
 
 //Задание №4
 
-var d:Int = array.count
+var d:Int = array3.count
 while d != 0 {
     d -= 1
-    if array[d] % 2 == 0 || array[d] % 3 != 0 {
-        array.remove(at: d)
+    if array3[d] % 2 == 0 || array3[d] % 3 != 0 {
+        array3.remove(at: d)
     }
 }
- print(array)
+ print(array3)
 
 //Задание №5
 var fib1 = 1
 var fib2 = 1
-var array = [fib1, fib2]
+var array5 = [fib1, fib2]
 var n = 0
 
 func fibonaci() {
     var sumfib = fib1 + fib2
     fib1 = fib2
     fib2 = sumfib
-    array.append(fib2)
+    array5.append(fib2)
 }
 
 while n < 50 {
@@ -60,11 +60,11 @@ while n < 50 {
     n += 1
 }
 
-print(array)
+print(array5)
 
 //Задание №6
 
-var array = [Int]()
+var array6 = [Int]()
 var p = 1
 
 func prostoe(_ number: Int) -> Bool {
@@ -74,13 +74,13 @@ return number > 1 && !(2..<number).contains { number % $0 == 0 }
 repeat {
     p += 1
     if prostoe(p) == true {
-        array.append(p)
+        array6.append(p)
     }
     
-} while array.count < 100
+} while array6.count < 100
 
 
-print(array)
+print(array6)
 
 
 
